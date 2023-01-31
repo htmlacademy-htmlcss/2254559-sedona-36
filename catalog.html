@@ -39,19 +39,17 @@
     </nav>
   </header>
   <main class="main-catalog">
-    <header class="catalog-header">
-      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+    <section class="catalog-filter">
+      <h1 class="catalog-page-title">Гостиницы Седоны</h1>
+      <h2 class="visually-hidden">Поиск с фильтром</h2>
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html"></a>
+          <a class="main-link-image" href="index.html"></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
-      </ul>
-    </header>
-    <section class="catalog-products">
-      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      </ol>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <button class="button" type="submit">Применить</button>
         <button type="reset">Сбросить</button>
@@ -102,6 +100,9 @@
           </ul>
         </fieldset>
       </form>
+    </section>
+    <section class="catalog-search-results">
+      <h2 class="visually-hidden">Результаты поиска</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
