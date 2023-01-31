@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Головко](https://up.htmlacademy.ru/htmlcss/36/user/2254559).
-* Наставник: `Максим Волков`. (https://htmlacademy.ru/profile/id1158117)
+* Наставник: [Максим Волков](https://htmlacademy.ru/profile/id1158117)
 
 ---
 
