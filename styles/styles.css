@@ -55,8 +55,6 @@ body {
   color: #333333;
 }
 .description-sedona {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -66,8 +64,6 @@ body {
   text-transform: uppercase;
  }
  .reasons {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -79,17 +75,57 @@ body {
  .advantages-item {
   width: 400px;
   height: 385px;
+  color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
   list-style: none;
   text-align: center;
  }
- .advantages-item-title p {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+ .advantages-item .city {
+  width: 400px;
+  height: 384px;
+ }
+ .advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  background-color: rgba(131, 179, 211, 0.12);
-  color: #333333;
-
+  text-transform: uppercase;
  }
+ .city, .bridge {
+  color: #ffffff;
+  background-color: #82b3d3;
+ }
+ .road {
+  background-color: rgba(131, 179, 211, 0.2);
+ }
+.advantages-service-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.advantages-service-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.advantages-service-item {
+  width: 400px;
+  height: 385px;
+  list-style: none;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+}
+.advantages-service-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-service-item-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
