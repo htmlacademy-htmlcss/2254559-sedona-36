@@ -108,10 +108,7 @@ body {
   width: 1200px;
 }
 
-.advantages-item-road {
-  width: 400px;
-  height: 385px;
-  text-align: center;
+.advantages-item-bg-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -141,11 +138,8 @@ body {
   text-align: center;
 }
 
-.advantages-service-item-food {
-  width: 400px;
-  height: 385px;
-  background-color: #ffffff;
-  text-align: center;
+.advantages-service-item-bg-food {
+    background-color: #ffffff;
 }
 
 .advantages-service-item-title {
