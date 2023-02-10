@@ -104,6 +104,10 @@ body {
   background-color: #82b3d3;
 }
 
+.advantages-item-big {
+  width: 1200px;
+}
+
 .advantages-item-road {
   width: 400px;
   height: 385px;
