@@ -54,6 +54,7 @@ body {
 .hero {
   width: 1200px;
   background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
+  background-size: 1200px auto, 1200px auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
   background-color:#82b3d3 ;
@@ -177,8 +178,11 @@ body {
 /*footer*/
 
 .subscription {
-  background-image: url(../images/subscribe-background-image.jpg);
   width: 1200px;
+  background-image: url(../images/subscribe-background-image.jpg);
+  background-position: center;
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
   background-color: #82b3d3;
   color: #333333;
 }
@@ -211,9 +215,12 @@ body {
 
 /*filter*/
 .catalog-filter {
-  background-image: url(../images/filter-background-image.jpg);
   width: 1200px;
   color: #ffffff;
+  background-image: url(../images/filter-background-image.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: #82b3d3;
 }
 
