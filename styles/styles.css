@@ -15,13 +15,22 @@
 }
 
 body {
- font-family: "PT Sans", sans-serif;
- font-style: normal;
- font-weight: 400;
- font-size: 18px;
- line-height: 21px;
- background-color: #ffffff;
- color: #333333;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+html {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* Header*/
@@ -57,7 +66,7 @@ body {
   background-size: 1200px auto, 1200px auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
-  background-color:#82b3d3 ;
+  background-color: #82b3d3;
   color: #333333;
 }
 
@@ -93,6 +102,19 @@ body {
   text-align: center;
 }
 
+.advantages-item-big {
+  width: 1200px;
+}
+
+.advantages-item-bg-city,
+.advantages-item-bg-bridge {
+  background-color: #82b3d3;
+}
+
+.advantages-item-bg-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-item-title {
   font-weight: 700;
   font-size: 24px;
@@ -101,18 +123,14 @@ body {
   text-transform: uppercase;
 }
 
-.city,
-.bridge {
+.advantages-item-title-city,
+.advantages-item-title-bridge {
   color: #ffffff;
-  background-color: #82b3d3;
 }
 
-.advantages-item-big {
-  width: 1200px;
-}
-
-.advantages-item-bg-road {
-  background-color: rgba(131, 179, 211, 0.2);
+.advantages-item-description-city,
+.advantages-item-description-bridge {
+  color: #ffffff;
 }
 
 .advantages-service-title {
@@ -142,7 +160,7 @@ body {
 }
 
 .advantages-service-item-bg-food {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .advantages-service-item-title {
@@ -256,7 +274,8 @@ body {
 
 /*search-results*/
 
-.search-results-text, .search-results-number {
+.search-results-text,
+.search-results-number {
   font-weight: 700;
 
   color: #000000;
@@ -356,4 +375,15 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+/* flex decoration*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
