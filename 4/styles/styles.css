@@ -35,9 +35,11 @@ body {
  background-color: #ffffff;
  color: #333333;
 }
+
 .navigation-menu {
   list-style: none;
 }
+
 .navigation-link {
   color: #333333;
   background-color: #ffffff;
@@ -50,12 +52,15 @@ body {
 /* hero */
 
 .hero {
-  background-image: url(../images/index-background.jpg);
   width: 1200px;
-  height: 485px;
+  background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
+  background-size: 1200px auto, 1200px auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, top;
   background-color:#82b3d3 ;
   color: #333333;
 }
+
 .description-sedona {
   font-weight: 700;
   font-size: 30px;
@@ -64,60 +69,52 @@ body {
   background-color: #ffffff;
   color: #333333;
   text-transform: uppercase;
- }
- .reasons {
+}
+
+.reasons {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   background-color: #ffffff;
   color: #333333;
- }
+}
+
  /* advantages */
 
- .advantages-list {
+.advantages-list {
   list-style: none;
- }
- .advantages-item {
+}
+
+.advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
- }
- .advantages-item-city {
-  width: 400px;
-  height: 384px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #82b3d3;
- }
- .advantages-item-title {
+}
+
+.advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
- }
- .advantages-item-title-city, .advantages-item-title-bridge {
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 28px;
- }
- .advantages-item-bridge {
-  width: 400px;
-  height: 385px;
-  text-align: center;
+}
+
+.city,
+.bridge {
   color: #ffffff;
   background-color: #82b3d3;
- }
- .advantages-item-road {
-  width: 400px;
-  height: 385px;
-  text-align: center;
+}
+
+.advantages-item-big {
+  width: 1200px;
+}
+
+.advantages-item-bg-road {
   background-color: rgba(131, 179, 211, 0.2);
- }
+}
+
 .advantages-service-title {
   font-weight: 700;
   font-size: 30px;
@@ -126,26 +123,28 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .advantages-service-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
+
 .advantages-service-list {
   list-style: none;
 }
+
 .advantages-service-item {
   width: 400px;
   height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
 }
-.advantages-service-item-food {
-  width: 400px;
-  height: 385px;
-  background-color: #ffffff;
-  text-align: center;
+
+.advantages-service-item-bg-food {
+    background-color: #ffffff;
 }
+
 .advantages-service-item-title {
   font-weight: 700;
   font-size: 24px;
@@ -153,12 +152,14 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+
 .advantages-service-item-description {
   font-size: 18px;
   line-height: 21px;
 }
 
 /*search-hotels*/
+
 .search-hotels-title {
   font-weight: 700;
   font-size: 30px;
@@ -167,6 +168,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .search-hotels-description {
   font-size: 22px;
   line-height: 26px;
@@ -176,12 +178,15 @@ body {
 /*footer*/
 
 .subscription {
-  background-image: url(../images/subscribe-background-image.jpg);
   width: 1200px;
-  height: 414.86px;
+  background-image: url(../images/subscribe-background-image.jpg);
+  background-position: center;
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
   background-color: #82b3d3;
   color: #333333;
 }
+
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
@@ -190,12 +195,14 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .subscription-description{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
 }
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -208,32 +215,40 @@ body {
 
 /*filter*/
 .catalog-filter {
-  background-image: url(../images/filter-background-image.jpg);
   width: 1200px;
-  height: 412px;
   color: #ffffff;
+  background-image: url(../images/filter-background-image.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: #82b3d3;
 }
+
 .catalog-page-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
+
 .breadcrumbs {
   list-style: none;
 }
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
 }
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
+
 .catalog-filter-list {
   list-style: none;
 }
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -247,19 +262,23 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+
 .select-control {
   font-size: 18px;
   line-height: 21px;
 }
+
 .house-list {
   list-style: none;
 }
+
 .house-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
+
 .button-more {
   font-weight: 700;
   font-size: 16px;
@@ -269,6 +288,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .button-add-favorites {
   font-weight: 700;
   font-size: 16px;
@@ -277,12 +297,14 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
 }
+
 .house-card-rating {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
 }
+
 .button-in-favorites {
   font-weight: 700;
   font-size: 16px;
@@ -297,12 +319,15 @@ body {
 .pagination {
   list-style: none;
 }
+
 .pagination-item {
   background-color: #82B3D3;
 }
+
 .pagination-item-current {
   background-color: #F2F2F2;
 }
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -311,6 +336,7 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
 .pagination-link-disabled {
   font-weight: 700;
   font-size: 20px;
@@ -319,9 +345,11 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
 .pagination-item-more-pages {
   background-color: #ffffff;
 }
+
 .pagination-link-more-pages {
   font-size: 22px;
   line-height: 26px;
