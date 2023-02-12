@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -25,28 +29,47 @@ body {
   color: #333333;
 }
 
-html {
-  height: 100%;
-}
-
 main {
   flex-grow: 1;
 }
 
 /* Header*/
 
+.navigation-logo {
+  margin-left: 70px;
+
+}
+
 .page-header {
- font-family: "PT Sans", sans-serif;
- font-style: normal;
- font-weight: 700;
- font-size: 20px;
- line-height: 24px;
- background-color: #ffffff;
- color: #333333;
+  display: flex;
+  flex-direction: row;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-menu {
+  width: 339px;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
   list-style: none;
+}
+
+.menu-user {
+  width: 268px;
+  margin-left: 285px;
+  padding: 0;
 }
 
 .navigation-link {
@@ -68,6 +91,10 @@ main {
   background-position: bottom, top;
   background-color: #82b3d3;
   color: #333333;
+}
+
+.welcome-img {
+
 }
 
 .description-sedona {
