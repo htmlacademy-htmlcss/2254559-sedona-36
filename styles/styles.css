@@ -30,6 +30,9 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   flex-grow: 1;
 }
 
@@ -85,8 +88,9 @@ main {
 
 .hero {
   width: 1200px;
+  height: auto;
   background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
-  background-size: 1200px auto, 1200px auto;
+  background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
   background-color: #82b3d3;
@@ -94,10 +98,12 @@ main {
 }
 
 .welcome-img {
+  display: block;
 
 }
 
 .description-sedona {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -108,6 +114,7 @@ main {
 }
 
 .reasons {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -118,6 +125,12 @@ main {
  /* advantages */
 
 .advantages-list {
+  width: 1200px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -160,6 +173,10 @@ main {
   color: #ffffff;
 }
 
+.advantages-item-photo {
+  display: block;
+}
+
 .advantages-service-title {
   font-weight: 700;
   font-size: 30px;
@@ -176,6 +193,10 @@ main {
 }
 
 .advantages-service-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -223,7 +244,13 @@ main {
 /*footer*/
 
 .subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1200px;
+  padding-top: 96px;
+  padding-bottom: 104px;
   background-image: url(../images/subscribe-background-image.jpg);
   background-position: center;
   background-size: 1200px auto;
@@ -248,12 +275,29 @@ main {
   color: #ffffff;
 }
 
+.footer-social {
+  width: 142px;
+}
+
+.footer-social-list {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-developer {
+  width: 115px;
 }
 
 /*page-catalog*/
@@ -404,7 +448,7 @@ main {
   text-decoration: none;
 }
 
-/* flex decoration*/
+/* flex big blocks*/
 
 .container {
   width: 1200px;
@@ -413,4 +457,25 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+
+.description-sedona-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  padding: 69px 0;
+  gap: 25px;
+
+}
+
+.social-contacts-developer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  padding: 40px 70px 30px;
+  gap: 40px;
 }
