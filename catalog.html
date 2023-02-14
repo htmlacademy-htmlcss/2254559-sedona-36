@@ -54,7 +54,8 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ol>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="catalog-filter-container">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -108,12 +109,16 @@
           <input type="number" max="9000" placeholder="До" step="100">
 
         </fieldset>
+        <div class="catalog-filter-button-container">
         <button class="button" type="submit">Применить</button>
         <button type="reset">Сбросить</button>
+      </div>
+      </div>
       </form>
     </section>
     <section class="catalog-search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
+      <div class="sort-results-container">
       <p class="search-results-text">Найдено гостиниц:
         <span class="search-results-number">38</span>
       </p>
@@ -131,6 +136,7 @@
       <a class="button button-list-cards" href="#">
         <span class="visually-hidden">Показать списком</span>
       </a>
+      </div>
       <ul class="house-list">
         <li class="house-card">
           <img class="house-card-image" src="images/hotel-amara-resort.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa.">
@@ -182,7 +188,7 @@
         </li>
       </ul>
       <ul class="pagination">
-        <li class="pagination-item-current">
+        <li class="pagination-item pagination-item-current">
           <a class="pagination-link-disabled">1</a>
         </li>
         <li class="pagination-item">
@@ -212,6 +218,7 @@
         <button class="button button-subscription" type="submit">Подписаться</button>
       </form>
     </section>
+    <div class="social-contacts-developer-container">
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="footer-social-list">
@@ -242,6 +249,7 @@
         <img class="footer-developer-logo" src="images/logo-htmlacademy.svg" width="115" height="33" alt="логотип HTML academy.">
       </a>
     </section>
+  </div>
   </footer>
 </div>
 </body>
