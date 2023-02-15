@@ -39,13 +39,14 @@ main {
 /* Header*/
 
 .navigation-logo {
-  margin-left: 70px;
 
 }
 
 .page-header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding: 0 70px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -64,14 +65,13 @@ main {
 .navigation-menu {
   width: 339px;
   margin: 0;
-  margin-left: 30px;
   padding: 0;
   list-style: none;
 }
 
 .menu-user {
   width: 268px;
-  margin-left: 285px;
+  margin: 0;
   padding: 0;
 }
 
@@ -87,8 +87,6 @@ main {
 /* hero */
 
 .hero {
-  width: 1200px;
-  height: auto;
   background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
@@ -99,7 +97,8 @@ main {
 
 .welcome-img {
   display: block;
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .description-sedona {
@@ -226,6 +225,10 @@ main {
 
 /*search-hotels*/
 
+.search-hotels {
+  padding: 96px 304px;
+}
+
 .search-hotels-title {
   font-weight: 700;
   font-size: 30px;
@@ -244,13 +247,7 @@ main {
 /*footer*/
 
 .subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px;
   background-image: url(../images/subscribe-background-image.jpg);
   background-position: center;
   background-size: 1200px auto;
@@ -304,7 +301,6 @@ main {
 
 /*filter*/
 .catalog-filter {
-  width: 1200px;
   color: #ffffff;
   background-image: url(../images/filter-background-image.jpg);
   background-position: center;
@@ -328,6 +324,10 @@ main {
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-search-results {
+  padding: 50px 70px 60px;
 }
 
 .catalog-filter-title {
@@ -467,13 +467,12 @@ main {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  padding: 0 40px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
-
 
 .description-sedona-container {
   display: flex;
