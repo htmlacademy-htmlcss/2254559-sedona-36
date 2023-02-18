@@ -36,11 +36,16 @@ main {
   flex-grow: 1;
 }
 
-/* Header*/
-
-.navigation-logo {
-
+.container {
+  width: 1200px;
+  padding: 0 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
+
+/* Header*/
 
 .page-header {
   display: flex;
@@ -56,6 +61,9 @@ main {
   color: #333333;
 }
 
+.navigation-logo {
+
+}
 .navigation {
   display: flex;
   margin: 0;
@@ -86,23 +94,26 @@ main {
 
 /* hero */
 
-.hero {
+.hero-welcome {
+  margin-bottom: 69px;
   background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, top;
+  background-position: bottom, center;
   background-color: #82b3d3;
   color: #333333;
 }
 
 .welcome-img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .description-sedona {
-  margin: 0;
+  margin: 0 0 25px;
+  padding: 0 290px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -113,7 +124,7 @@ main {
 }
 
 .reasons {
-  margin: 0;
+  margin: 0 auto 90px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -124,8 +135,6 @@ main {
  /* advantages */
 
 .advantages-list {
-  width: 1200px;
-  height: auto;
   padding: 0;
   margin: 0;
   display: flex;
@@ -193,7 +202,7 @@ main {
 
 .advantages-service-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -281,6 +290,14 @@ main {
   list-style: none;
 }
 
+.social-contacts-developer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px 30px;
+  gap: 40px;
+}
+
 .footer-contacts {
   width: 720px;
 }
@@ -301,6 +318,7 @@ main {
 
 /*filter*/
 .catalog-filter {
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-image: url(../images/filter-background-image.jpg);
   background-position: center;
@@ -330,6 +348,16 @@ main {
   padding: 50px 70px 60px;
 }
 
+.catalog-filter-container {
+  display: flex;
+}
+
+.catalog-filter-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -346,6 +374,14 @@ main {
 }
 
 /*search-results*/
+.sort-results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-results-text {
+  margin-right: 192px;
+}
 
 .search-results-text,
 .search-results-number {
@@ -464,55 +500,3 @@ main {
 }
 
 /* flex big blocks*/
-
-.container {
-  width: 1200px;
-  padding: 0 40px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.description-sedona-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  padding: 69px 0;
-  gap: 25px;
-
-}
-
-.social-contacts-developer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1060px;
-  padding: 40px 70px 30px;
-  gap: 40px;
-}
-
-.sort-results-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.search-results-number {
-  padding-right: 192px;
-}
-
-.catalog-filter-container {
-  display: flex;
-}
-
-.catalog-filter-button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.catalog-filter {
-  padding: 35px 70px 70px;
-}
