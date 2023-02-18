@@ -99,8 +99,8 @@ main {
   background-image: url(../images/hero-decoration.svg), url(../images/index-background.jpg);
   background-size: 1200px 57px, 1200px 485px;
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, center;
-  background-color: #82b3d3;
+  background-position: bottom, top;
+  background-color: #c6c926;
   color: #333333;
 }
 
@@ -498,5 +498,3 @@ main {
   color: #000000;
   text-decoration: none;
 }
-
-/* flex big blocks*/
