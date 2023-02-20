@@ -377,6 +377,15 @@ main {
   display: flex;
 }
 
+.subscription-form-email {
+  width: 452px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
 .button {
   border: none;
 }
@@ -394,9 +403,13 @@ main {
 
 .footer-social {
   width: 142px;
+
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -411,18 +424,22 @@ main {
 
 .footer-contacts {
   width: 720px;
+  text-align: center;
 }
 
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   color: #000000;
   text-decoration: none;
 }
 
 .footer-developer {
   width: 115px;
+}
+
+.footer-developer-logo {
+  padding: 8.5px 0;
 }
 
 /*page-catalog*/
