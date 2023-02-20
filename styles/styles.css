@@ -45,11 +45,24 @@ main {
   min-height: 100%;
 }
 
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
 /* Header*/
 
 .page-header {
   display: flex;
-  /*justify-content: space-between;*/
+  margin: 0;
   padding: 0 70px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -58,6 +71,10 @@ main {
   line-height: 24px;
   background-color: #ffffff;
   color: #333333;
+}
+
+.page-header-logo {
+  display: block;
 }
 
 .navigation-logo {
@@ -73,6 +90,7 @@ main {
 .navigation-menu {
   width: 350px;
   display: flex;
+  align-items: center;
   margin: 0;
   margin-right: 285px;
   padding: 0;
@@ -84,7 +102,7 @@ main {
 }
 
 .menu-user {
-  width: 270px;
+  width: 290px;
   margin: 0;
   padding: 0;
 }
@@ -129,6 +147,7 @@ main {
 }
 
 .description-sedona {
+  width: 620px;
   margin: 0 0 25px;
   padding: 0 290px;
   font-weight: 700;
@@ -138,6 +157,7 @@ main {
   background-color: #ffffff;
   color: #333333;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .reasons {
@@ -160,20 +180,32 @@ main {
 }
 
 .advantages-item {
-  width: 400px;
+  /*width: 400px;*/
   min-height: 385px;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
 }
 
-.advantages-item-big {
-  width: 1200px;
+.advantages-item-container {
+  width: 230px;
+  padding: 112.5px 85px;
 }
 
-.advantages-item-bg-city,
-.advantages-item-bg-bridge {
+.advantages-item-big {
+  /*width: 1200px;*/
+  display: flex;
   background-color: #82b3d3;
+}
+
+.advantages-item-big-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-container-city,
+.advantages-item-container-bridge {
+  width: 230px;
+  padding: 101.5px 85px;
 }
 
 .advantages-item-bg-road {
@@ -181,11 +213,16 @@ main {
 }
 
 .advantages-item-title {
+  width: 175px;
+  margin: 0 auto;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .advantages-item-title-city,
@@ -193,8 +230,13 @@ main {
   color: #ffffff;
 }
 
+.advantages-item-description {
+  margin: 0;
+}
+
 .advantages-item-description-city,
 .advantages-item-description-bridge {
+  margin: 0;
   color: #ffffff;
 }
 
@@ -202,7 +244,15 @@ main {
   display: block;
 }
 
+.advantages-service {
+  margin: 0;
+  padding: 0;
+  padding-top: 64px;
+}
 .advantages-service-title {
+  width: 505px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -212,6 +262,7 @@ main {
 }
 
 .advantages-service-description {
+  margin: 0 auto 64px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -232,11 +283,19 @@ main {
   text-align: center;
 }
 
+.advantages-service-item-container {
+  width: 230px;
+  min-height: 223px;
+  padding: 81px 85px;
+}
+
 .advantages-service-item-bg-food {
   background-color: #ffffff;
 }
 
 .advantages-service-item-title {
+  margin: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -245,6 +304,7 @@ main {
 }
 
 .advantages-service-item-description {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -253,9 +313,12 @@ main {
 
 .search-hotels {
   padding: 96px 304px;
+  text-align: center;
 }
 
 .search-hotels-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -265,6 +328,8 @@ main {
 }
 
 .search-hotels-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -282,7 +347,15 @@ main {
   color: #333333;
 }
 
+.subscription-text-container {
+  width: 475px;
+  padding: 0 104.5px 54px;
+  word-wrap: break-word;
+}
+
 .subscription-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -292,10 +365,31 @@ main {
 }
 
 .subscription-description{
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+}
+
+.subscription-form {
+  width: 684px;
+  display: flex;
+}
+
+.button {
+  border: none;
+}
+
+.button-subscription {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer-social {
