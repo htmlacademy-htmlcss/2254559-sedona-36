@@ -494,6 +494,7 @@ main {
 
 .catalog-filter-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .price-container {
