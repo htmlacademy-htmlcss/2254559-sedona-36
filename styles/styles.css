@@ -188,7 +188,6 @@ main {
 }
 
 .advantages-item {
-  /*width: 400px;*/
   min-height: 385px;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
@@ -201,7 +200,6 @@ main {
 }
 
 .advantages-item-big {
-  /*width: 1200px;*/
   display: flex;
   background-color: #82b3d3;
 }
@@ -619,8 +617,8 @@ main {
 }
 
 .house-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3,340px);
   gap: 20px;
   margin: 0;
   margin-bottom: 80px;
