@@ -452,15 +452,23 @@ main {
 
 .footer-social {
   width: 142px;
-
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-social-item {
+  padding: 0;
+}
+
+.button-social {
+  padding: 8px 8px;
 }
 
 .social-contacts-developer-container {
