@@ -147,6 +147,10 @@ main {
   text-decoration: none;
 }
 
+.button-here:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 /*page-index*/
 
 /* hero */
@@ -385,7 +389,10 @@ main {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+}
 
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3)
 }
 
 /*footer*/
@@ -450,6 +457,10 @@ main {
   border-radius: 0 4px 4px 0;
 }
 
+.button-subscription:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .footer-social {
   width: 142px;
 }
@@ -469,6 +480,10 @@ main {
 
 .button-social {
   padding: 8px 8px;
+}
+
+.button-social:active {
+  opacity: 30%;
 }
 
 .social-contacts-developer-container {
@@ -491,13 +506,39 @@ main {
   text-decoration: none;
 }
 
+.contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
 .footer-developer {
   width: 115px;
 }
 
-.footer-developer-logo {
+.footer-developer-link svg {
+  fill: #000000;
+}
+
+.footer-developer-link svg:hover {
+  fill: #756157;
+}
+
+.footer-developer-link svg:active {
+  fill: #756157;
+  opacity: 30%;
+}
+
+/*.footer-developer-logo {
   padding: 8.5px 0;
 }
+
+.footer-developer-logo:hover {
+  color: #756157;
+}*/
 
 /*page-catalog*/
 
