@@ -62,6 +62,7 @@ main {
 
 .page-header {
   display: flex;
+  /*justify-content: space-between;*/
   margin: 0;
   padding: 0 70px;
   font-family: "PT Sans", sans-serif;
@@ -75,16 +76,16 @@ main {
 
 .page-header-logo {
   display: block;
-  /*margin-bottom: -6px;
-  margin-right: -2px;*/
+  /*margin-bottom: -6px;*/
 }
 
 .navigation-logo {
   margin-right: 30px;
-
 }
+
 .navigation {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -95,27 +96,33 @@ main {
   display: flex;
   align-items: center;
   margin: 0;
-  margin-right: 280px;
+  margin-right: 265px;
   padding: 0;
   list-style: none;
 }
 
 .navigation-menu-item {
-  padding: 10px 6px;
+  position: relative;
+  padding: 20px 6px;
 }
 
 .menu-user {
-  width: 270px;
+  width: 280px;
   justify-content: end;
   margin: 0;
   padding: 0;
 }
 
 .navigation-item {
-  padding: 0 4px;
+  padding: 0;
 }
 
-.navigation-link {
+.menu-user li:nth-of-type(2) {
+  margin-right: 20px;
+}
+
+.navigation-link,
+.navigation-link-current {
   padding: 10px 10px;
   color: #333333;
   background-color: #ffffff;
@@ -123,12 +130,37 @@ main {
   text-align: center;
 }
 
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 32px);
+  bottom: 0;
+  left: 16px;
+  border-bottom: 2px solid #756157;
+}
+
 .navigation-link-search {
   padding: 10px 8px;
 
 }
 .navigation-link-favorites {
+  position: relative;
   padding: 10px 8px;
+  text-decoration: none;
+}
+
+.favorites-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 5px 5px 4px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
+
 }
 
 .button {
@@ -554,6 +586,8 @@ main {
 }
 
 .catalog-page-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -561,7 +595,8 @@ main {
 
 .breadcrumbs {
   display: flex;
-  gap: 11px;
+  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
