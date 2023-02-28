@@ -489,8 +489,13 @@ main {
   border-radius: 0 4px 4px 0;
 }
 
+.button-subscription:hover {
+  background-color: #68A2CA;
+}
+
 .button-subscription:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
 }
 
 .footer-social {
@@ -599,6 +604,15 @@ main {
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
+}
+
+.breadcrumbs-item li:first-child {
+  display: block;
+  width: 13px;
+  height: 15px;
+  background-image: url(../images/icons/icon-home.svg);
+  background-position: center;
+
 }
 
 .breadcrumbs-link {
