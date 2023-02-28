@@ -141,12 +141,33 @@ main {
 
 .navigation-link-search {
   padding: 10px 8px;
-
+  fill: #000000;
 }
+
+.navigation-link-search:hover svg {
+  fill: #82B3D3;
+}
+
+.navigation-link-search:active svg {
+  fill: #82b2d383;
+}
+
 .navigation-link-favorites {
   position: relative;
   padding: 10px 8px;
   text-decoration: none;
+}
+
+.navigation-link-favorites svg {
+  fill: #000000;
+}
+
+.navigation-link-favorites:hover svg {
+  fill: #82B3D3;
+}
+
+.navigation-link-favorites:active svg {
+  fill: #82b2d383;
 }
 
 .favorites-number {
@@ -160,7 +181,6 @@ main {
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 50%;
-
 }
 
 .button {
