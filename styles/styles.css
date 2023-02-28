@@ -527,6 +527,11 @@ main {
 
 .button-social {
   padding: 8px 8px;
+  fill: #82b3d3;
+}
+
+.button-social:hover svg {
+  fill:#68A2CA;
 }
 
 .button-social:active {
