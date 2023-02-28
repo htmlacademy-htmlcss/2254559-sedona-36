@@ -179,8 +179,13 @@ main {
   text-decoration: none;
 }
 
+.button-here:hover {
+  background-color: #615048;
+}
+
 .button-here:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 /*page-index*/
@@ -423,8 +428,13 @@ main {
   background-color: #756157;
 }
 
+.button-search:hover {
+  background-color: #615048;
+}
+
 .button-search:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 /*footer*/
