@@ -193,6 +193,11 @@ main {
 }
 
 .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
   border-radius: 4px;
   border: none;
 }
@@ -200,11 +205,6 @@ main {
 .button-here {
   padding: 8px 34px;
   background-color: #756157;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -449,11 +449,8 @@ main {
 
 .button-search {
   padding: 8px 50px;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: #756157;
 }
 
@@ -524,11 +521,8 @@ main {
 
 .button-subscription {
   padding: 8px 50px;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
 }
@@ -655,18 +649,26 @@ main {
   list-style: none;
 }
 
-.breadcrumbs-item li:first-child {
-  display: block;
-  width: 13px;
-  height: 15px;
-  background-image: url(../images/icons/icon-home.svg);
-  background-position: center;
-
+li:not(:first-child).breadcrumbs-item::before {
+  position: absolute;
+  width: 8px;
+  height: 19.94px;
+  content: "";
+  background-image: url(../images/icons/icon-arrow-breadcrumbs.svg);
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
+  padding-left: 18px;
   font-size: 16px;
   line-height: 21px;
+}
+
+.breadcrumbs-home-link {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  padding-right: 10px;
 }
 
 .catalog-search-results {
@@ -712,11 +714,8 @@ main {
 
 .button-apply {
   padding: 8px 50px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: #82B3D3;
 }
 
@@ -731,11 +730,8 @@ main {
 
 .button-reset {
   padding: 8px 50px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
   background-color: rgb(255, 255, 255, 0);
 }
 
@@ -793,6 +789,11 @@ main {
   height: 20px;
   border: none;
   border-radius: 4px;
+}
+
+.control-input {
+  background-color: #ffffff;
+
 }
 
 /*search-results*/
@@ -877,38 +878,45 @@ main {
 
 .button-more {
   padding: 8px 26px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+.button-more:hover {
+  background-color: #615048;
+}
+
+.button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .button-add-favorites {
   padding: 8px 20px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
   background-color: #82B3D3;
-  text-transform: uppercase;
 }
 
-.button-add-favorites:active,
-.button-in-favorites:active {
-  color: #FFFFFF4D;
+.button-add-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.button-add-favorites:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
 }
 
 .button-in-favorites {
   padding: 8px 18px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
   background-color: #7DB54F;
-  text-transform: uppercase;
+}
+
+.button-in-favorites:hover {
+  background-color: #6C9E42;
+}
+
+.button-in-favorites:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
 }
 
 .house-card-button-container {
