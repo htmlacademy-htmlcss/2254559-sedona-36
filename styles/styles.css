@@ -130,6 +130,15 @@ main {
   text-align: center;
 }
 
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: #756157;
+  opacity: 30%;
+}
+
 .navigation-link-current::after {
   content: "";
   position: absolute;
@@ -711,6 +720,15 @@ main {
   background-color: #82B3D3;
 }
 
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-reset {
   padding: 8px 50px;
   font-weight: 700;
@@ -721,9 +739,17 @@ main {
   background-color: rgb(255, 255, 255, 0);
 }
 
-.button-apply:active,
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
 .button-reset:active {
-  color: #FFFFFF4D;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-group {
