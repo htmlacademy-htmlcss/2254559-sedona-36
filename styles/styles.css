@@ -972,9 +972,28 @@ li:not(:first-child).breadcrumbs-item::before {
   margin-bottom: 16px;
 }
 
-.star {
-  margin: 0;
+.star-container {
+  display: flex;
+  justify-content: start;
+  gap: 6px;
 }
+
+.star {
+  width: 18px;
+  height: 36px;
+  margin: 0;
+  background-image: url(../images/icons/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*.star-2 {
+  width: 24px;
+  height: 36px;
+  background-image: url(../images/icons/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
 
 .house-card-rating {
   margin: 0;
