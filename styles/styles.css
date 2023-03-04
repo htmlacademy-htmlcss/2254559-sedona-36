@@ -363,6 +363,7 @@ main {
 }
 
 .advantages-service-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -373,21 +374,18 @@ main {
 .advantages-service-item {
   width: 400px;
   height: 385px;
+  padding: 81px 85px;
+  box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
 }
 
 .advantages-service-item-bg-house {
   background-image: url(../images/icons/advantage-icon-house.svg);
+  background-size: 75px 72px;
   background-repeat: no-repeat;
-  position: absolute;
-  background-position: center top;
-}
+  background-position: top 81px center;
 
-.advantages-service-item-container {
-  width: 230px;
-  min-height: 223px;
-  margin: 81px 85px;
 }
 
 .advantages-service-item-food {
@@ -396,16 +394,16 @@ main {
 
 .advantages-service-item-bg-food {
   background-image: url(../images/icons/advantage-icon-food.svg);
+  background-size: 75px 72px;
   background-repeat: no-repeat;
-  position: absolute;
-  background-position: center top;
+  background-position: top 81px center ;
 }
 
 .advantages-service-item-bg-souvenirs {
   background-image: url(../images/icons/advantage-icon-souvenirs.svg);
+  background-size: 75px 72px;
   background-repeat: no-repeat;
-  position: absolute;
-  background-position: center top;
+  background-position: top 81px center;
 }
 
 .advantages-service-item-title {
@@ -420,7 +418,8 @@ main {
 }
 
 .advantages-service-item-description {
-  margin: 0;
+  width: 230px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
 }
