@@ -74,12 +74,13 @@ main {
 }
 
 .page-header-logo {
+  position: absolute;
   display: block;
-  /*margin-bottom: -6px;*/
+
 }
 
 .navigation-logo {
-  margin-right: 30px;
+  margin-right: 168px;
 }
 
 .navigation {
