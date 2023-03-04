@@ -655,6 +655,14 @@ li:not(:first-child).breadcrumbs-item::before {
   line-height: 21px;
 }
 
+.breadcrumbs-link:not(.breadcrumbs-link-current):hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:not(.breadcrumbs-link-current):active {
+  opacity: 30%;
+}
+
 .breadcrumbs-home-link {
   display: block;
   width: 12px;
@@ -664,14 +672,6 @@ li:not(:first-child).breadcrumbs-item::before {
   background-repeat: no-repeat;
   background-position: left center;
 
-}
-
-.breadcrumbs-home-link:hover {
-  opacity: 60%;
-}
-
-.breadcrumbs-home-link:active {
-  opacity: 30%;
 }
 
 .catalog-search-results {
@@ -994,14 +994,6 @@ li:not(:first-child).breadcrumbs-item::before {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/*.star-2 {
-  width: 24px;
-  height: 36px;
-  background-image: url(../images/icons/icon-star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
 
 .house-card-rating {
   margin: 0;
