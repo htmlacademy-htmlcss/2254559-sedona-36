@@ -121,10 +121,6 @@ main {
   margin-left: 20px;
 }
 
-/*.menu-user li:nth-of-type(2) {
-  margin-right: 20px;
-}*/
-
 .navigation-link,
 .navigation-link-current {
   padding: 10px 10px;
@@ -194,6 +190,10 @@ main {
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 50%;
+}
+
+.navigation-link-favorites:hover .favorites-number {
+  background-color: #82B3D3;
 }
 
 .button {
@@ -645,7 +645,11 @@ main {
   list-style: none;
 }
 
-li:not(:first-child).breadcrumbs-item::before {
+.breadcrumbs-item:not(:first-child) {
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:first-child):before {
   position: absolute;
   width: 8px;
   height: 19.94px;
