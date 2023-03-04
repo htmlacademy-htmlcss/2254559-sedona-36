@@ -666,6 +666,14 @@ li:not(:first-child).breadcrumbs-item::before {
 
 }
 
+.breadcrumbs-home-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-home-link:active {
+  opacity: 30%;
+}
+
 .catalog-search-results {
   padding: 50px 70px 60px;
 }
