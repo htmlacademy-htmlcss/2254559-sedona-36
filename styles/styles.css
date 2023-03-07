@@ -758,7 +758,11 @@ main {
   cursor: pointer;
 }
 
-.range-toogle:active {
+.range-toogle:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toogle:focus {
   border: 3px solid #83B3D3;
 }
 
@@ -848,9 +852,9 @@ main {
   line-height: 23px;
 }
 
-.control {
+/*.control {
 
-}
+}*/
 
 .control-input {
   margin: 0;
