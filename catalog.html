@@ -118,19 +118,17 @@
                 <legend class="catalog-filter-title">Стоимость,Р:</legend>
                 <label for="price"></label>
                 <div class="price-container">
-                  <input class="input-price" type="number" min="0" placeholder="От" id="price" step="100">
-                  <input class="input-price" type="number" max="9000" placeholder="До" step="100">
+                <div class="input-price-container">
+                  <input class="input-price-from" type="number" min="0" placeholder="От" id="price" value="0">
+                  <input class="input-price-to" type="number" max="12000" placeholder="До" value="9000">
                 </div>
-                <div class="range">
-                  <div class="range-scale">
-                    <div class="range-bar">
-                      <button type="button" class="range-toogle toogle-min"></button>
-                      <button type="button" class="range-toogle toogle-max"></button>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button type="button" class="range-toogle toogle-min"></button>
+                        <button type="button" class="range-toogle toogle-max"></button>
+                      </div>
                     </div>
-
-                  </div>
-                  <div class="range-inputs">
-
                   </div>
                 </div>
 
