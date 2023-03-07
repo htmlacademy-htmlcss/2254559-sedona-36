@@ -700,8 +700,7 @@ main {
   border: none;
 }
 
-.input-price-from,
-.input-price-to  {
+.input-price  {
   width: 143px;
   height: 48px;
   border: none;
