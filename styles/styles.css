@@ -85,15 +85,14 @@ main {
 }
 
 .navigation {
+  width: 100%;
   display: flex;
-  /*justify-content: space-between;*/
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .navigation-menu {
-  width: 492px;
   display: flex;
   align-items: center;
   margin: 0;
@@ -108,10 +107,8 @@ main {
 }
 
 .menu-user {
-  width: 400px;
   justify-content: end;
   margin: 0;
-  margin-left: auto;
   padding: 0;
 }
 
