@@ -694,16 +694,16 @@ main {
 
 .date-title,
 .tourists-number-title {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .date-title {
-  margin-right: 22px;
-  box-sizing: border-box;
+  margin-right: 24px;
+
 }
 
 .input-date{
