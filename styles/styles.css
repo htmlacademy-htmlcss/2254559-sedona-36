@@ -196,6 +196,7 @@ main {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -643,6 +644,125 @@ main {
   opacity: 30%;
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 717px;
+  box-sizing: border-box;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/icons/icon-cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.date-title,
+.tourists-number-title {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.date-title {
+  margin-right: 22px;
+  box-sizing: border-box;
+}
+
+.input-date{
+  width: 440px;
+  height: 48px;
+  margin-bottom: 4px;
+  padding: 12px 50px 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  background-color: #F2F2F2;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.search-date-result {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.error-date {
+  color: #FF5757;
+}
+
+.tourists-number-conteiner {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tourist-counter-container {
+  display: flex;
+
+}
+
+.button-tourist-minus,
+.button-tourist-plus {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+}
+
+.tourist-number {
+  width: 31px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.modal-search-button {
+  width: 100%;
+  padding: 18px 256.5px;
+  background-color: #82B3D3;
+  border-radius: 10px;
+}
+
 /*page-catalog*/
 
 /*filter*/
@@ -748,7 +868,8 @@ main {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  border: none;
+  border: 2px solid transparent;
+  background-color: #F2F2F2;
 }
 
 .input-price-from::-webkit-inner-spin-button,
@@ -757,6 +878,11 @@ main {
 .input-price-to::-webkit-inner-outer-button {
   appearance: none;
   margin: 0;
+}
+
+.input-price-from:hover,
+.input-price-to:hover  {
+  background-color: #E6E6E6;
 }
 
 .input-price-from {

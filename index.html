@@ -111,7 +111,8 @@
           <ul class="advantages-service-list">
             <li class="advantages-service-item advantages-service-item-bg-house">
               <h3 class="advantages-service-item-title">Жильё</h3>
-              <p class="advantages-service-item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
+              <p class="advantages-service-item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в
+                кино!
               </p>
             </li>
             <li class="advantages-service-item advantages-service-item-food advantages-service-item-bg-food">
@@ -199,6 +200,47 @@
           </section>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="date-title" for="date-arrival">Дата Заезда:</label>
+              <input class="input-date" type="text" id="date-arrival" name="date-arrival" placeholder="Укажите дату" required>
+              <p class="search-date-result error-date">Мы не можем отправить вас в прошлое.</p>
+              <label class="date-title" for="date-depature">Дата Выезда:</label>
+              <input class="input-date" type="text" id="date-depature" name="date-depature" placeholder="Укажите дату" required>
+              <p class="search-date-result">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="tourists-number-conteiner">
+                <label class="tourists-number-title">Взрослые:</label>
+                <div class="tourist-counter-container">
+                  <button class="button-tourist-minus">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="tourist-number" name="adult-number" value="2">
+                  <button class="button-tourist-plus">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+                <label class="tourists-number-title">Дети:</label>
+                <div class="tourist-counter-container">
+                  <button class="button-tourist-minus">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="tourist-number" name="children-number" value="2">
+                  <button class="button-tourist-plus">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+              <button class="button modal-search-button">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
