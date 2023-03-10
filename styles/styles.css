@@ -282,8 +282,20 @@ main {
 }
 
 .advantages-item-container {
+  position: relative;
   width: 230px;
   padding: 112.5px 85px;
+}
+
+.advantages-item-container:after {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 198.5px;
+  left: 170px;
+  transform: translateY(-50%), translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
 }
 
 .advantages-item-big {
@@ -297,8 +309,21 @@ main {
 
 .advantages-item-container-city,
 .advantages-item-container-bridge {
+  position: relative;
   width: 230px;
   padding: 101.5px 85px;
+}
+
+.advantages-item-container-city::after,
+.advantages-item-container-bridge::after {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 188px;
+  left: 170px;
+  transform: translateY(-50%), translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
 }
 
 .advantages-item-bg-road {
