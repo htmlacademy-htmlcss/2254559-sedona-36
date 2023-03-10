@@ -701,14 +701,20 @@ main {
   border: none;
 }
 
+.price-from-field {
+  position: relative;
+}
+
+.price-to-field {
+  position: relative;
+}
+
 .input-price-from,
 .input-price-to  {
   width: 143px;
   height: 48px;
   box-sizing: border-box;
-  padding-top: 12px;
-  padding-left: 20px;
-  padding-bottom: 12px;
+  padding: 12px 45px 12px 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -731,9 +737,18 @@ main {
   border-radius: 0 4px 4px 0;
 }
 
-.input-price-to::placeholder,
-.input-price-from::placeholder {
-  text-align: right;
+.price-from-field span,
+.price-to-field span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #aaaaaa;
 }
 
 .range-scale {
@@ -902,6 +917,12 @@ main {
 .control:active .control-radio-mark,
 .control:active .control-label {
   opacity: 30%;
+}
+
+.control-input[type="checkbox"]:disabled .control-checkbox-mark,
+.control-input[type="checkbox"]:disabled .control-radio-mark,
+.control-input[type="checkbox"]:disabled .control-label {
+  opacity: 20%;
 }
 
 .control-label {
