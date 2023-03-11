@@ -777,20 +777,25 @@ main {
 }
 
 .tooltip {
+  position: relative;
+}
+
+.tooltip-toggle {
   position: absolute;
   top: 0;
-  left: 59px;
+  left: 10px;
   display: block;
   width: 26px;
   height: 26px;
   background-image: url(../images/icons/icon-info.svg);
-
+  border: none;
+  background-color: transparent;
 }
 
 .tooltip-text {
   position: absolute;
   top: 41px;
-  left: -115px;
+  left: -105px;
   z-index: 1;
   width: 256px;
   height: 143px;
@@ -818,8 +823,8 @@ main {
   content: "";
 }
 
-.tooltip:hover + .tooltip-text,
-.tooltip:focus + .tooltip-text {
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
 
