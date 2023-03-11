@@ -707,7 +707,7 @@ main {
 }
 
 .input-date{
-  width: 440px;
+  max-width: 440px;
   height: 48px;
   margin-bottom: 4px;
   padding: 12px 50px 12px 20px;
@@ -750,10 +750,23 @@ main {
   padding: 14px 10px;
 }
 
+.button-tourist-minus svg {
+ fill: #7561574D;
+}
+
+.button-tourist-plus svg {
+  fill: #7561574D;
+ }
+
 .tourist-number {
   width: 31px;
   height: 48px;
+  padding: 14px 10px;
   box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .modal-search-button {
