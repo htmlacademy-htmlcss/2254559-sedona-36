@@ -686,10 +686,28 @@ main {
   background-color: #F2F2F2;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/icons/icon-cross.svg);
+  /*background-image: url(../images/icons/icon-cross.svg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   cursor: pointer;
+}
+
+.modal-close-button svg {
+  fill: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active svg {
+  outline: none;
+  opacity: 30%;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .form-search-container {
@@ -773,17 +791,20 @@ main {
   position: absolute;
   top: 41px;
   left: -115px;
+  z-index: 1;
   width: 256px;
   height: 143px;
   padding: 18px;
   padding-top: 15px;
   padding-left: 22px;
   box-sizing: border-box;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #333333;
   border-radius: 10px;
+  display: none;
 }
 
 .tooltip-text::before {
@@ -795,7 +816,11 @@ main {
   background-image: url(../images/icons/triangle-tooltip.svg);
   transform: translateX(-50%);
   content: "";
+}
 
+.tooltip:hover + .tooltip-text,
+.tooltip:focus + .tooltip-text {
+  display: block;
 }
 
 .tourist-counter-container-adult,
@@ -1054,11 +1079,11 @@ main {
 }
 
 .range-toogle:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .range-toogle:active {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .toogle-min {
@@ -1105,7 +1130,7 @@ main {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -1181,7 +1206,7 @@ main {
 }
 
 .control-input[type="checkbox"]:focus + .control-checkbox-mark  {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 /*.control-input[type="checkbox"]:focus + .control-checkbox-mark::before {
@@ -1195,9 +1220,13 @@ main {
   opacity: 30%;
 }
 
-.control-input[type="checkbox"]:disabled .control-checkbox-mark,
-.control-input[type="checkbox"]:disabled .control-radio-mark,
-.control-input[type="checkbox"]:disabled .control-label {
+.control-input[type="checkbox"]:disabled + .control-checkbox-mark,
+.control-input[type="checkbox"]:disabled ~ .control-label {
+  opacity: 20%;
+}
+
+.control-input[type="radio"]:disabled + .control-radio-mark,
+.control-input[type="radio"]:disabled ~ .control-label {
   opacity: 20%;
 }
 
@@ -1226,6 +1255,10 @@ main {
   height: 10px;
   background-image: url(../images/icons/icon-radio.svg);
   content: "";
+}
+
+.control-input[type="radio"]:focus + .control-radio-mark  {
+  outline: 3px solid #83B3D3;
 }
 
 /*search-results*/
