@@ -208,17 +208,17 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="date-title" for="date-arrival">Дата Заезда:</label>
-              <input class="input-date" type="text" id="date-arrival" name="date-arrival" placeholder="Укажите дату"
-                required>
-              <p class="search-date-result error-date">Мы не можем отправить вас в прошлое.</p>
-              <label class="date-title" for="date-depature">Дата Выезда:</label>
-              <input class="input-date" type="text" id="date-depature" name="date-depature" placeholder="Укажите дату"
-                required>
-              <p class="search-date-result">На эти даты есть свободные номера. Пока есть.</p>
-              <div class="tourists-number-conteiner">
-                <label class="tourists-number-title">Взрослые:</label>
-                <div class="tourist-counter-container">
+              <div class="form-search-container">
+                <label class="date-title date-arrival" for="date-arrival">Дата Заезда:</label>
+                <input class="input-date input-date-arrival" type="text" id="date-arrival" name="date-arrival"
+                  placeholder="Укажите дату" value="27 апреля 2020" required>
+                <p class="search-date-result error-date">Мы не можем отправить вас в прошлое.</p>
+                <label class="date-title date-departure" for="date-depature">Дата Выезда:</label>
+                <input class="input-date input-date-departure" type="text" id="date-depature" name="date-depature"
+                  placeholder="Укажите дату" value="1 сентября 2023" required>
+                <p class="search-date-result">На эти даты есть свободные номера. Пока есть.</p>
+                <label class="tourists-number-title-adult">Взрослые:</label>
+                <div class="tourist-counter-container-adult">
                   <button class="button-tourist-minus">
                     <span class="visually-hidden">Меньше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -233,8 +233,8 @@
                     </svg>
                   </button>
                 </div>
-                <label class="tourists-number-title">Дети:</label>
-                <div class="tourist-counter-container">
+                <label class="tourists-number-title-children">Дети:</label>
+                <div class="tourist-counter-container-children">
                   <button class="button-tourist-minus" type="button">
                     <span class="visually-hidden">Меньше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -249,6 +249,7 @@
                     </svg>
                   </button>
                 </div>
+
               </div>
               <button class="button modal-search-button">Найти</button>
             </form>

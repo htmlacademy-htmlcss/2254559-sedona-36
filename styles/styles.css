@@ -692,10 +692,19 @@ main {
   cursor: pointer;
 }
 
+.form-search-container {
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 137px 110px 88px 133px 110px;
+  grid-template-rows: auto auto auto auto auto;
+  align-items: center;
+}
+
 .date-title,
-.tourists-number-title {
-  padding-top: 11px;
-  padding-bottom: 11px;
+.tourists-number-title-adult,
+.tourists-number-title-children {
+  /*padding-top: 11px;
+  padding-bottom: 11px;*/
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -703,6 +712,7 @@ main {
 
 .date-title {
   margin-right: 24px;
+  grid-column: 1 / 2;
 
 }
 
@@ -719,6 +729,11 @@ main {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  grid-column: 2 / span 4;
+}
+
+.input-date::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-date-result {
@@ -726,21 +741,38 @@ main {
   margin-bottom: 23px;
   padding: 0 20px;
   font-size: 16px;
+  grid-column: 2 / span 4;
 }
 
 .error-date {
   color: #FF5757;
+  grid-column: 2 / span 3;
 }
 
-.tourists-number-conteiner {
+.tourists-number-title-adult {
+  grid-column: 1 / 2;
+}
+
+.tourists-number-title-children {
+  grid-column: 4 / 5;
+}
+/*.tourists-number-conteiner {
   margin-bottom: 48px;
   display: flex;
   justify-content: space-between;
+}*/
+
+.tourist-counter-container-adult,
+.tourist-counter-container-children {
+  display: flex;
 }
 
-.tourist-counter-container {
-  display: flex;
+.tourist-counter-container-adult {
+  grid-column: 2 / 3;
+}
 
+.tourist-counter-container-children {
+  grid-column: 5 / 6;
 }
 
 .button-tourist-minus,
@@ -748,6 +780,9 @@ main {
   width: 40px;
   height: 48px;
   padding: 14px 10px;
+  border: none;
+  background-color: #F2F2F2;
+  cursor: pointer;
 }
 
 .button-tourist-minus svg {
@@ -758,11 +793,18 @@ main {
   fill: #7561574D;
  }
 
+.button-tourist-minus:hover svg,
+.button-tourist-plus:hover svg {
+  fill: #000000;
+}
+
 .tourist-number {
   width: 31px;
   height: 48px;
   padding: 14px 10px;
   box-sizing: border-box;
+  border: none;
+  background-color: #F2F2F2;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -774,6 +816,15 @@ main {
   padding: 18px 256.5px;
   background-color: #82B3D3;
   border-radius: 10px;
+}
+
+.modal-search-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-search-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*page-catalog*/
