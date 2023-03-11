@@ -786,6 +786,18 @@ main {
   border-radius: 10px;
 }
 
+.tooltip-text::before {
+  position: absolute;
+  top: -9px;
+  left: 128px;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/icons/triangle-tooltip.svg);
+  transform: translateX(-50%);
+  content: "";
+
+}
+
 .tourist-counter-container-adult,
 .tourist-counter-container-children {
   display: flex;
