@@ -754,13 +754,20 @@ main {
 }
 
 .tourists-number-title-children {
+  position: relative;
   grid-column: 4 / 5;
 }
-/*.tourists-number-conteiner {
-  margin-bottom: 48px;
-  display: flex;
-  justify-content: space-between;
-}*/
+
+.tourists-number-title-children::after {
+  position: absolute;
+  top: 0;
+  left: 59px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/icons/icon-info.svg);
+  content: "";
+
+}
 
 .tourist-counter-container-adult,
 .tourist-counter-container-children {
@@ -785,17 +792,38 @@ main {
   cursor: pointer;
 }
 
+.button-tourist-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-tourist-plus {
+  border-radius: 0 4px 4px 0;
+}
+
 .button-tourist-minus svg {
  fill: #7561574D;
 }
 
 .button-tourist-plus svg {
   fill: #7561574D;
- }
+}
 
 .button-tourist-minus:hover svg,
 .button-tourist-plus:hover svg {
   fill: #000000;
+}
+
+.button-tourist-minus:focus svg,
+.button-tourist-plus:focus svg {
+  fill: #000000;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.button-tourist-minus:active svg,
+.button-tourist-plus:active svg {
+  fill: #7561574D;
+  outline: none;
 }
 
 .tourist-number {
