@@ -758,15 +758,32 @@ main {
   grid-column: 4 / 5;
 }
 
-.tourists-number-title-children::after {
+.tooltip {
   position: absolute;
   top: 0;
   left: 59px;
+  display: block;
   width: 26px;
   height: 26px;
   background-image: url(../images/icons/icon-info.svg);
-  content: "";
 
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 41px;
+  left: -115px;
+  width: 256px;
+  height: 143px;
+  padding: 18px;
+  padding-top: 15px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
 }
 
 .tourist-counter-container-adult,
