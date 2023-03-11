@@ -724,6 +724,7 @@ main {
 }
 
 .input-date{
+  position: relative;
   max-width: 440px;
   height: 48px;
   margin-bottom: 4px;
@@ -737,6 +738,23 @@ main {
   font-size: 18px;
   line-height: 24px;
   grid-column: 2 / span 4;
+}
+
+.input-date::after {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/icon-calendar.svg);
+  background-repeat: no-repeat;
+  opacity: 30%;
+  content: " ";
+  z-index: 1;
+}
+
+.input-date:focus {
+  outline: 2px solid #000000;
 }
 
 .input-date::placeholder {
