@@ -737,6 +737,9 @@ main {
   border-radius: 4px;
   border: none;
   background-color: #F2F2F2;
+  background-image: url(../images/icons/icon-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: top 14px right 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -782,7 +785,7 @@ main {
   grid-column: 1 / 2;
 }
 
-.tourists-number-title-children {
+.children-title-container {
   position: relative;
   grid-column: 4 / 5;
 }
