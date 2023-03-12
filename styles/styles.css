@@ -720,9 +720,7 @@ main {
 }
 
 .date-title {
-  margin-right: 24px;
   grid-column: 1 / 2;
-
 }
 
 .input-date{
@@ -909,9 +907,11 @@ main {
 
 .modal-search-button {
   width: 100%;
-  padding: 18px 256.5px;
+  padding: 18px 25px;
   background-color: #82B3D3;
   border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .modal-search-button:hover {
@@ -1041,6 +1041,12 @@ main {
   margin: 0;
 }
 
+.input-price-from:focus,
+.input-price-to:focus  {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
 .input-price-from:hover,
 .input-price-to:hover  {
   background-color: #E6E6E6;
@@ -1102,12 +1108,14 @@ main {
 }
 
 .toogle-min {
-  top: -10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .toogle-max {
-  top: -10px;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .catalog-filter-button-container {
