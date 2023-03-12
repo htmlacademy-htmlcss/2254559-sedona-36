@@ -719,6 +719,10 @@ main {
   line-height: 24px;
 }
 
+.tourists-number-title-children {
+  padding-right: 26px;
+}
+
 .date-title {
   grid-column: 1 / 2;
 }
@@ -1033,12 +1037,16 @@ main {
   background-color: #F2F2F2;
 }
 
-.input-price-from::-webkit-inner-spin-button,
-.input-price-from::-webkit-outer-spin-button,
-.input-price-to::-webkit-inner-spin-button,
-.input-price-to::-webkit-inner-outer-button {
-  appearance: none;
-  margin: 0;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .input-price-from:focus,
@@ -1269,9 +1277,11 @@ main {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 10px;
-  height: 10px;
-  background-image: url(../images/icons/icon-radio.svg);
+  width: 8px;
+  height: 8px;
+  border: 1px solid #3F5E72;
+  border-radius: 50%;
+  background-color: #3F5E72;
   content: "";
 }
 
