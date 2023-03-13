@@ -719,10 +719,12 @@ main {
   line-height: 24px;
 }
 
-.date-title {
-  margin-right: 24px;
-  grid-column: 1 / 2;
+.tourists-number-title-children {
+  padding-right: 26px;
+}
 
+.date-title {
+  grid-column: 1 / 2;
 }
 
 .input-date{
@@ -735,6 +737,9 @@ main {
   border-radius: 4px;
   border: none;
   background-color: #F2F2F2;
+  background-image: url(../images/icons/icon-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: top 14px right 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -780,7 +785,7 @@ main {
   grid-column: 1 / 2;
 }
 
-.tourists-number-title-children {
+.children-title-container {
   position: relative;
   grid-column: 4 / 5;
 }
@@ -909,9 +914,11 @@ main {
 
 .modal-search-button {
   width: 100%;
-  padding: 18px 256.5px;
+  padding: 18px 25px;
   background-color: #82B3D3;
   border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .modal-search-button:hover {
@@ -1033,12 +1040,22 @@ main {
   background-color: #F2F2F2;
 }
 
-.input-price-from::-webkit-inner-spin-button,
-.input-price-from::-webkit-outer-spin-button,
-.input-price-to::-webkit-inner-spin-button,
-.input-price-to::-webkit-inner-outer-button {
-  appearance: none;
-  margin: 0;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input-price-from:focus,
+.input-price-to:focus  {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .input-price-from:hover,
@@ -1102,12 +1119,14 @@ main {
 }
 
 .toogle-min {
-  top: -10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .toogle-max {
-  top: -10px;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .catalog-filter-button-container {
@@ -1261,9 +1280,11 @@ main {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 10px;
-  height: 10px;
-  background-image: url(../images/icons/icon-radio.svg);
+  width: 8px;
+  height: 8px;
+  border: 1px solid #3F5E72;
+  border-radius: 50%;
+  background-color: #3F5E72;
   content: "";
 }
 

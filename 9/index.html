@@ -230,7 +230,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" name="adult-number" value="2">
+                  <input class="tourist-number" type="number" name="adult-number" value="2">
                   <button class="button-tourist-plus">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -238,13 +238,15 @@
                     </svg>
                   </button>
                 </div>
-                <label class="tourists-number-title-children">Дети:
+                <div class="children-title-container">
+                  <label class="tourists-number-title-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-text"></button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                    <span class="tooltip-text" role="tooltip" id="tooltip-text">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до
                       18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-                </label>
+                </div>
                 <div class="tourist-counter-container-children">
                   <button class="button-tourist-minus" type="button">
                     <span class="visually-hidden">Меньше</span>
@@ -252,7 +254,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" name="children-number" value="2">
+                  <input class="tourist-number" type="number" name="children-number" value="2">
                   <button class="button-tourist-plus">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
