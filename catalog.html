@@ -18,7 +18,7 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-menu-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-menu-item">
               <a class="navigation-link navigation-link-current">Гостиницы</a>
@@ -73,20 +73,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="waterpool" checked>
-                      Бассейн
+                      <input class="visually-hidden control-input" type="checkbox" name="waterpool" checked>
+                      <span class="control-checkbox-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="control-checkbox-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
+                      <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                      <span class="control-checkbox-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -96,30 +99,48 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="hotel" checked>
-                      Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="type-house" value="hotel" checked>
+                      <span class="control-radio-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="motel">
-                      Мотель
+                      <input class="visually-hidden control-input" type="radio" name="type-house" value="motel">
+                      <span class="control-radio-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-house" value="apartments">
-                      Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="type-house" value="apartments">
+                      <span class="control-radio-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость,Р:</legend>
-                <label for="price"></label>
+              <fieldset class="catalog-filter-price">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="price-container">
-                  <input class="input-price-from" type="number" min="0" placeholder="От" id="price" step="100">
-                  <input class="input-price-to" type="number" max="9000" placeholder="До" step="100">
+                  <div class="input-price-container">
+                    <label class="price-from-field">
+                      <input class="input-price-from" type="number" name="min-price" min="0" value="0">
+                      <span>от</span>
+                    </label>
+                    <label class="price-to-field">
+                      <input class="input-price-to" type="number" name="max-price" max="12000" value="9000">
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px">
+                        <button type="button" class="range-toogle toogle-min"></button>
+                        <button type="button" class="range-toogle toogle-max"></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
               </fieldset>
@@ -160,7 +181,7 @@
               <h3 class="house-card-title">Amara Resort & Spa</h3>
               <div class="house-card-description-container">
                 <p class="house-card-description">Гостиница</p>
-                <p class="house-card-description">От 4000 р</p>
+                <p class="house-card-description">От 4000 ₽</p>
               </div>
               <div class="house-card-button-container">
                 <a class="button button-more" href="#">Подробнее</a>
@@ -183,7 +204,7 @@
               <h3 class="house-card-title">Villas at Poco Diablo</h3>
               <div class="house-card-description-container">
                 <p class="house-card-description">Гостиница</p>
-                <p class="house-card-description">От 5000 р</p>
+                <p class="house-card-description">От 5000 ₽</p>
               </div>
               <div class="house-card-button-container">
                 <a class="button button-more" href="#">Подробнее</a>
@@ -206,7 +227,7 @@
               <h3 class="house-card-title">Desert Quail Inn</h3>
               <div class="house-card-description-container">
                 <p class="house-card-description">Гостиница</p>
-                <p class="house-card-description">От 2500 р</p>
+                <p class="house-card-description">От 2500 ₽</p>
               </div>
               <div class="house-card-button-container">
                 <a class="button button-more" href="#">Подробнее</a>
@@ -228,7 +249,7 @@
               <h3 class="house-card-title">GreenTree Inn</h3>
               <div class="house-card-description-container">
                 <p class="house-card-description">Гостиница</p>
-                <p class="house-card-description">От 1500 р</p>
+                <p class="house-card-description">От 1500 ₽</p>
               </div>
               <div class="house-card-button-container">
                 <a class="button button-more" href="#">Подробнее</a>
