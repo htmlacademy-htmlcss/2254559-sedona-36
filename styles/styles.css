@@ -1175,6 +1175,7 @@ input[type="number"]:focus {
 }
 
 .catalog-filter-button-container {
+  width: 191px;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -1226,6 +1227,7 @@ input[type="number"]:focus {
 }
 
 .catalog-filter-title {
+  max-width: 288px;
   padding: 0;
   margin-bottom: 32px;
   font-weight: 700;
@@ -1352,7 +1354,9 @@ input[type="number"]:focus {
 }
 
 .search-results-text {
-  margin: 6.5px 200px 6.5px 0;
+  max-width: 400px;
+  margin: 6.5px 0 6.5px 0;
+  margin-right: auto;
 }
 
 .search-results-text,
@@ -1366,7 +1370,7 @@ input[type="number"]:focus {
 
 .select-control {
   width: 290px;
-  margin-right: auto;
+  margin-right: 70px;
   padding: 12px 18px;
   padding-right: 40px;
   font-family: inherit;
@@ -1571,11 +1575,8 @@ input[type="number"]:focus {
 }
 
 .pagination-item {
-  display: flex;
   width: 60px;
   height: 60px;
-  justify-content: center;
-  align-items: center;
   background-color: #82b3d3;
   border-radius: 4px;
 }
@@ -1592,11 +1593,16 @@ input[type="number"]:focus {
   background-color: #f2f2f2;
 }
 
-.pagination-link {
-  padding: 12.5px 25px;
+.pagination-link,
+.pagination-link-disabled,
+.pagination-link-more-pages {
+  display: block;
+  padding: 12px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
 }
@@ -1606,23 +1612,9 @@ input[type="number"]:focus {
 }
 
 .pagination-link-disabled {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  text-decoration: none;
   color: #000000;
 }
 
 .pagination-item-more-pages {
   background-color: #ffffff;
-}
-
-.pagination-link-more-pages {
-  padding: 16px 20px;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #000000;
-  text-decoration: none;
 }
