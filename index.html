@@ -221,7 +221,7 @@
                 <input class="input-date input-date-departure" type="text" id="date-depature" name="date-depature"
                   placeholder="Укажите дату" value="1 сентября 2023" required>
                 <p class="search-date-result">На эти даты есть свободные номера. Пока есть.</p>
-                <label class="tourists-number-title-adult">Взрослые:</label>
+                <label class="tourists-number-title-adult" for="adult-number">Взрослые:</label>
                 <div class="tourist-counter-container-adult">
                   <button class="button-tourist-minus" type="button">
                     <span class="visually-hidden">Меньше</span>
@@ -229,7 +229,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" type="number" name="adult-number" value="2" min="1">
+                  <input class="tourist-number" type="number" id="adult-number" name="adult-number" value="2" min="1">
                   <button class="button-tourist-plus" type="button">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -238,7 +238,7 @@
                   </button>
                 </div>
                 <div class="children-title-container">
-                  <label class="tourists-number-title-children">Дети:</label>
+                  <label class="tourists-number-title-children" for="children-number">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-text"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-text">Укажите количество детей, которые будут
@@ -253,7 +253,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" type="number" name="children-number" value="2" min="0">
+                  <input class="tourist-number" type="number" id="children-number" name="children-number" value="2" min="0">
                   <button class="button-tourist-plus" type="button">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
