@@ -231,13 +231,23 @@ main {
 }
 
 .hero-welcome {
+  position: relative;
   margin-bottom: 69px;
-  background-image: url("../images/hero-decoration.svg"), url("../images/index-background.jpg");
-  background-size: 1200px 57px, 1200px 485px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom, top;
+  background-image: url("../images/index-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+  background-position: top;
   background-color: #c6c926;
   color: #333333;
+}
+
+.hero-welcome::after {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/hero-decoration.svg");
+  content: "";
 }
 
 .welcome-img {
