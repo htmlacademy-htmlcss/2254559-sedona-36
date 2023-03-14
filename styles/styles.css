@@ -293,17 +293,6 @@ main {
   padding: 112.5px 85px;
 }
 
-.advantages-item-container::after {
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  top: 198.5px;
-  left: 170px;
-  transform: translateY(-50%), translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
-}
-
 .advantages-item-big {
   display: flex;
   background-color: #82b3d3;
@@ -320,23 +309,12 @@ main {
   padding: 101.5px 85px;
 }
 
-.advantages-item-container-city::after,
-.advantages-item-container-bridge::after {
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  top: 188px;
-  left: 170px;
-  transform: translateY(-50%), translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.3);
-  content: "";
-}
-
 .advantages-item-bg-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-title {
+  position: relative;
   width: 175px;
   margin: 0 auto;
   margin-bottom: 62px;
@@ -349,9 +327,26 @@ main {
   word-wrap: break-word;
 }
 
+.advantages-item-title::after {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
 .advantages-item-title-city,
 .advantages-item-title-bridge {
   color: #ffffff;
+}
+
+.advantages-item-title-city::after,
+.advantages-item-title-bridge::after {
+  background-color: #ffffff;
+  opacity: 30%;
 }
 
 .advantages-item-description {
@@ -404,7 +399,7 @@ main {
 
 .advantages-service-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   padding: 81px 85px;
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
