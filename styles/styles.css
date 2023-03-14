@@ -21,12 +21,13 @@ html {
 body {
   height: 100%;
   margin: 0;
+  padding: 0 40px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #333333;
 }
 
@@ -39,11 +40,12 @@ main {
 
 .container {
   width: 1200px;
-  padding: 0 40px;
-  background-color: #f2f2ff;
+  min-height: 100%;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -77,6 +79,7 @@ main {
 
 .page-header-logo {
   position: absolute;
+  z-index: 1;
   display: block;
 }
 
@@ -140,12 +143,14 @@ main {
 }
 
 .navigation-link-current::after {
-  content: "";
   position: absolute;
+  transform: translateY(50%);
+  z-index: 1;
   bottom: 0;
   left: 16px;
   right: 16px;
-  border-bottom: 2px solid #756157;
+  border-bottom: 3px solid #756157;
+  content: "";
 }
 
 .navigation-link-search {
@@ -377,6 +382,7 @@ main {
   margin: 0;
   padding: 0;
   padding-top: 64px;
+  /*background-color: #ffffff;*/
 }
 
 .advantages-service-title {
@@ -982,7 +988,7 @@ main {
   color: #ffffff;
   background-image: url("../images/filter-background-image.jpg");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 1200px 412px;
   background-repeat: no-repeat;
   background-color: #82b3d3;
 }
@@ -1055,7 +1061,7 @@ main {
 }
 
 .input-price-container {
-  margin-bottom: 48px;
+  margin-bottom: 44px;
   display: flex;
   gap: 2px;
   border: none;
