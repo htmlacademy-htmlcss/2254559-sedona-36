@@ -94,6 +94,7 @@ main {
 
 .navigation-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-right: auto;
