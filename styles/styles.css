@@ -502,6 +502,16 @@ main {
   color: #333333;
 }
 
+.subscription-catalog {
+  padding: 96px 258px 104px;
+
+  /*background-position: center;
+  background-size: 1200px auto;*/
+
+  background-color: #ffffff;
+  color: #333333;
+}
+
 .subscription-text-container {
   width: 475px;
   padding: 0 104.5px 54px;
@@ -527,6 +537,25 @@ main {
   color: #ffffff;
 }
 
+.subscription-title-catalog {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription-description-catalog {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
 .subscription-form {
   width: 684px;
   display: flex;
@@ -539,6 +568,7 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  background-color: #f2f2f2;
   border: 2px solid transparent;
   border-radius: 4px 0 0 4px;
 }
