@@ -154,7 +154,8 @@ main {
 }
 
 .navigation-link-search {
-  padding: 18px 12px;
+  display: block;
+  padding: 22px 12px 16px;
   fill: #000000;
 }
 
@@ -167,8 +168,9 @@ main {
 }
 
 .navigation-link-favorites {
+  display: block;
   position: relative;
-  padding: 18px 12px;
+  padding: 22px 12px 16px;
   text-decoration: none;
 }
 
@@ -186,7 +188,7 @@ main {
 
 .favorites-number {
   position: absolute;
-  top: 8px;
+  top: 11px;
   right: 4px;
   padding: 5px 5px 5px 4px;
   font-weight: 400;
@@ -213,6 +215,7 @@ main {
 }
 
 .button-here {
+  display: block;
   padding: 8px 34px;
   background-color: #756157;
   text-decoration: none;
@@ -321,7 +324,7 @@ main {
 .advantages-item-container-bridge {
   position: relative;
   width: 230px;
-  padding: 101.5px 85px;
+  padding: 102px 85px;
 }
 
 .advantages-item-bg-road {
@@ -339,7 +342,6 @@ main {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  word-wrap: break-word;
 }
 
 .advantages-item-title::after {
@@ -590,10 +592,17 @@ main {
   border-radius: 4px 0 0 4px;
 }
 
+.subscription-form-email::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .subscription-form-email:hover {
   box-sizing: border-box;
   border: 2px solid #68a2ca;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-subscription {
