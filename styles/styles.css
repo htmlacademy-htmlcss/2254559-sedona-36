@@ -41,6 +41,7 @@ main {
 .container {
   width: 1200px;
   min-height: 100%;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -723,7 +724,7 @@ main {
 }
 
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 
 .modal {
@@ -788,10 +789,6 @@ main {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-}
-
-.tourists-number-title-children {
-  /*padding-right: 26px;*/
 }
 
 .date-title {
