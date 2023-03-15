@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -163,7 +164,7 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <div class="sorting-view-container">
-              <a class="button button-many-cards" href="#">
+              <a class="button button-many-cards current-view-cards" href="#">
                 <span class="visually-hidden">Показать много карточек</span>
               </a>
               <a class="button button-one-card" href="#">
@@ -288,12 +289,13 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="subscription">
+        <section class="subscription-catalog">
           <div class="subscription-text-container">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-            <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <h2 class="subscription-title-catalog">Подпишитесь на рассылку</h2>
+            <p class="subscription-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden">Email</label>
             <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button button-subscription" type="submit">Подписаться</button>
           </form>

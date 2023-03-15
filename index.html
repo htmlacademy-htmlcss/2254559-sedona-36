@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -60,7 +61,7 @@
             <img class="welcome-img" src="images/welcome-sedona.svg" width="458" height="352"
               alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
           </div>
-          <p class="description-sedona">Седона — небольшой городок в Аризоне,
+          <p class="description-sedona">Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</p>
           <p class="reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
@@ -85,7 +86,7 @@
             <li class="advantages-item advantages-item-bg-road">
               <div class="advantages-item-container">
                 <h3 class="advantages-item-title">Красивая дорога</h3>
-                <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item">
@@ -96,7 +97,7 @@
             </li>
             <li class="advantages-item advantages-item-big advantages-item-big-reverse">
               <div class="advantages-item-container-bridge">
-                <h3 class="advantages-item-title advantages-item-title-bridge">Там есть мост дьявола</h3>
+                <h3 class="advantages-item-title advantages-item-title-bridge">Там есть<br> мост дьявола</h3>
                 <p class="advantages-item-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
@@ -131,7 +132,7 @@
         <section class="search-hotels">
           <h2 class="visually-hidden">Поиск отеля</h2>
           <h3 class="search-hotels-title">Заинтересовались?</h3>
-          <p class="search-hotels-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
           <button class="button button-search" type="button">поиск гостиницы в Седоне</button>
         </section>
@@ -143,6 +144,7 @@
             <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden">Email</label>
             <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="button button-subscription" type="submit">Подписаться</button>
           </form>
@@ -213,15 +215,15 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-search-container">
-                <label class="date-title date-arrival" for="date-arrival">Дата Заезда:</label>
+                <label class="date-title date-arrival" for="date-arrival">Дата заезда:</label>
                 <input class="input-date input-date-arrival" type="text" id="date-arrival" name="date-arrival"
                   placeholder="Укажите дату" value="27 апреля 2020" required>
                 <p class="search-date-result error-date">Мы не можем отправить вас в прошлое.</p>
-                <label class="date-title date-departure" for="date-depature">Дата Выезда:</label>
+                <label class="date-title date-departure" for="date-depature">Дата выезда:</label>
                 <input class="input-date input-date-departure" type="text" id="date-depature" name="date-depature"
                   placeholder="Укажите дату" value="1 сентября 2023" required>
                 <p class="search-date-result">На эти даты есть свободные номера. Пока есть.</p>
-                <label class="tourists-number-title-adult">Взрослые:</label>
+                <label class="tourists-number-title-adult" for="adult-number">Взрослые:</label>
                 <div class="tourist-counter-container-adult">
                   <button class="button-tourist-minus" type="button">
                     <span class="visually-hidden">Меньше</span>
@@ -229,7 +231,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" type="number" name="adult-number" value="2" min="1">
+                  <input class="tourist-number" type="number" id="adult-number" name="adult-number" value="2" min="1">
                   <button class="button-tourist-plus" type="button">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
@@ -238,7 +240,7 @@
                   </button>
                 </div>
                 <div class="children-title-container">
-                  <label class="tourists-number-title-children">Дети:</label>
+                  <label class="tourists-number-title-children" for="children-number">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-text"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-text">Укажите количество детей, которые будут
@@ -253,7 +255,7 @@
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
-                  <input class="tourist-number" type="number" name="children-number" value="2" min="0">
+                  <input class="tourist-number" type="number" id="children-number" name="children-number" value="2" min="0">
                   <button class="button-tourist-plus" type="button">
                     <span class="visually-hidden">Больше</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
