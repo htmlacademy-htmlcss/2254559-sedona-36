@@ -723,7 +723,7 @@ main {
 }
 
 .modal-container-close {
-  display: none;
+  /*display: none;*/
 }
 
 .modal {
@@ -751,7 +751,7 @@ main {
 
 .modal-close-button {
   position: absolute;
-  top: 64px;
+  top: 65px;
   right: 52px;
   width: 52px;
   height: 52px;
@@ -787,10 +787,11 @@ main {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .tourists-number-title-children {
-  padding-right: 26px;
+  /*padding-right: 26px;*/
 }
 
 .date-title {
@@ -878,13 +879,13 @@ main {
 
 .tooltip-text {
   position: absolute;
-  top: 41px;
-  left: -105px;
+  top: 39px;
+  left: -104px;
   z-index: 1;
   width: 256px;
   min-height: 143px;
   padding: 18px;
-  padding-top: 15px;
+  padding-top: 19px;
   padding-left: 22px;
   box-sizing: border-box;
   font-weight: 400;
