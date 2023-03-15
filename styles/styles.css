@@ -629,10 +629,12 @@ main {
 
 .footer-social-item {
   padding: 0;
+  box-sizing: border-box;
 }
 
 .button-social {
-  padding: 8px 8px;
+  display: block;
+  padding:  12px 8px 8px;
   fill: #82b3d3;
 }
 
@@ -648,7 +650,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 44px 70px 30px;
   gap: 40px;
 }
 
@@ -658,6 +660,9 @@ main {
 }
 
 .contacts-phone {
+  display: block;
+  width: 335px;
+  margin: 0 auto;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -675,6 +680,11 @@ main {
 
 .footer-developer {
   width: 115px;
+}
+
+.footer-developer-link {
+  display: block;
+  padding-top: 4px;
 }
 
 .footer-developer-link svg {
@@ -1478,6 +1488,7 @@ input[type="number"]:focus {
 
 .house-card {
   padding: 19px;
+  padding-top: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
@@ -1573,6 +1584,7 @@ input[type="number"]:focus {
 .house-card-rating {
   margin: 0;
   padding: 8px 22px;
+  padding-top: 10px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
