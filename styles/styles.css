@@ -97,6 +97,7 @@ body {
 }
 
 .navigation-menu {
+  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
